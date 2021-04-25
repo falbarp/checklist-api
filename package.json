@@ -1,0 +1,26 @@
+{
+  "name": "checklist-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falbarp/checklist-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falbarp/checklist-api/issues"
+  },
+  "homepage": "https://github.com/falbarp/checklist-api#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "nodemon": "^2.0.7"
+  }
+}
