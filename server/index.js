@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const requestId = require('express-request-id')();
 
 const logger = require('./config/logger');
-const api = require('./api')
+const api = require('./api/v1')
 
 //Init app
 const app=express();
@@ -14,6 +14,7 @@ app.use(logger.requests);
 
 //Setup router and routes
 app.use('/api', api);
+app.use('/api/v1', api);
 
 app.use
     (morgan('combined', {stream: {write: (message) => logger.info(message) } })
